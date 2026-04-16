@@ -1,0 +1,16 @@
+<!-- Citive AI Tracking -->
+<script>
+(function() {
+  var d = {
+    trackingKey: '0bde8fdbcea24cbbbe04cc0f88386389',
+    pageUrl: window.location.href,
+    pagePath: window.location.pathname,
+    userAgent: navigator.userAgent
+  };
+  fetch('https://your-backend-url/api/track/visit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(d)
+  }).catch(function(){});
+})();
+</script>
