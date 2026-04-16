@@ -1,0 +1,30 @@
+<!-- Citive AI Tracking -->
+<script>
+(function() {
+  var d = {
+    trackingKey: '0bde8fdbcea24cbbbe04cc0f88386389',
+    pageUrl: window.location.href,
+    pagePath: window.location.pathname,
+    userAgent: navigator.userAgent
+  };
+  fetch('https://your-backend-url/api/track/visit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(d)
+  }).catch(function(){});
+})();
+</script>
+<meta name="description" content="Jupiter CPG - AI optimized website experience" />
+<meta property="og:title" content="Jupiter CPG" />
+<meta property="og:description" content="Jupiter CPG - AI optimized" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cpgmarketing.ai" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jupiter CPG",
+  "url": "https://cpgmarketing.ai",
+  "description": "Jupiter CPG official website"
+}
+</script>
